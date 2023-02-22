@@ -79,7 +79,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           sudo apt install pandoc
-          make install
+          make dev
       - name: Test documentation
         run: |
           cd docs
