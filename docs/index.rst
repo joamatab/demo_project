@@ -8,4 +8,5 @@ demo_project
     README
     markdown
     rst
+    notebooks
     CHANGELOG
