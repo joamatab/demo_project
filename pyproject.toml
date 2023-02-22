@@ -48,7 +48,7 @@ dev = [
     ]
 docs = [
     "autodoc_pydantic",
-    "docutils==0.19",
+    "docutils==0.17.1",
     "matplotlib",
     "myst-parser",
     "nbsphinx",
