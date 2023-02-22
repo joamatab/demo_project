@@ -1,6 +1,6 @@
 # demo_project
 
-your package description. What is this package for?
+for testing notebooks
 
 ## Usage
 
