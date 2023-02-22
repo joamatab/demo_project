@@ -25,12 +25,11 @@ jobs:
           sudo apt install pandoc
       - name: make docs
         run: |
-          cd docs
-          make html
+          jupyter-book build docs/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: "./docs/build/html/"
+          path: "./docs/_build/html/"
   deploy-docs:
     needs: build-docs
     permissions:

@@ -62,5 +62,4 @@ jobs:
           make dev
       - name: Test documentation
         run: |
-          cd docs
-          make html
+          jupyter-book build docs/
