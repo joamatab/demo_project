@@ -2,13 +2,6 @@
 install:
 	pip install -e .[dev]
 	pre-commit install
-	pip install git+https://github.com/executablebooks/jupyter-book.git
-	pip install --upgrade pydata-sphinx-theme
-	pip install --upgrade sphinx-book-theme --pre
-	pip install --upgrade jupytext
-	pip install sphinx=="5.3.0"
-	pip install docutils=="0.17.1"
-
 
 dev:
 	pip install -e .[dev,docs]

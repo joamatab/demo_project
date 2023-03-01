@@ -47,7 +47,7 @@ dev = [
     "pyproject-flake8",
     ]
 docs = [
-    "jupyter-book",
+    "jupyter-book==0.14.0",
     ]
 
 
