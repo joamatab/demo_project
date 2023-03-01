@@ -23,6 +23,9 @@ jobs:
         run: |
           make dev
           sudo apt install pandoc
+      - name: print version
+        run: |
+          jb --version
       - name: make docs
         run: |
           jupyter-book build docs/
