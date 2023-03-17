@@ -60,8 +60,13 @@ from matplotlib.lines import Line2D
 from matplotlib import rcParams, cycler
 import matplotlib.pyplot as plt
 import numpy as np
+import gdsfactory as gf
 
 plt.ion()
+c = gf.c.straight_heater_doped_rib()
+s = c.to_3d()
+s.show()
+
 
 # %% vscode={"languageId": "python"}
 # Fixing random state for reproducibility
