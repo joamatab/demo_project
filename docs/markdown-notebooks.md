@@ -5,7 +5,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.13
-    jupytext_version: 1.11.5
+    jupytext_version: 1.14.5
 kernelspec:
   display_name: Python 3
   language: python
@@ -24,6 +24,7 @@ With MyST Markdown, you can define code cells with a directive like so:
 
 ```{code-cell}
 print(2 + 2)
+raise ValueError("hi")
 ```
 
 When your book is built, the contents of any `{code-cell}` blocks will be
