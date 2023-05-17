@@ -2,6 +2,8 @@
 
 for testing notebooks
 
+https://github.com/executablebooks/mystjs
+
 ## Usage
 
 ## Installation
