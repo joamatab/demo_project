@@ -63,3 +63,4 @@ jobs:
       - name: Test documentation
         run: |
           jupyter-book build docs/
+          python test_doc_errors.py
