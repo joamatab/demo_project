@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: "9260cbc9c84c06022993bfbcc42fdbf0305c5b8e"
+    rev: "v5.0.0"
     hooks:
       - id: check-added-large-files
       - id: check-case-conflict
@@ -28,7 +28,7 @@ repos:
   #       args: ["--profile", "black", "--filter-files"]
 
   - repo: https://github.com/psf/black
-    rev: "d9b8a6407e2f46304a8d36b18e4a73d8e0613519"
+    rev: "24.10.0"
     hooks:
       - id: black
 
@@ -38,13 +38,13 @@ repos:
   #     - id: flake8
 
   - repo: https://github.com/kynan/nbstripout
-    rev: e4c5b4dcbab4afa0b88b7a9243db42b1a8d95dde
+    rev: 0.7.1
     hooks:
       - id: nbstripout
         files: ".ipynb"
 
   - repo: https://github.com/asottile/pyupgrade
-    rev: ddb39ad37166dbc938d853cc77606526a0b1622a
+    rev: v3.18.0
     hooks:
       - id: pyupgrade
         args: [--py37-plus, --keep-runtime-typing]
@@ -56,7 +56,7 @@ repos:
   #       args: ["-L TE,TE/TM,te,ba,FPR,fpr_spacing,ro,donot"]
 
   - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: 953faa6870f6663ac0121ab4a800f1ce76bca31f
+    rev: v0.10.0.1
     hooks:
       - id: shellcheck
 
@@ -66,14 +66,14 @@ repos:
   #     - id: python-use-type-annotations
 
   - repo: https://github.com/PyCQA/bandit
-    rev: fe1361fdcc274850d4099885a802f2c9f28aca08
+    rev: 1.7.10
     hooks:
       - id: bandit
         args: [--exit-zero]
         # ignore all tests, not just tests data
         exclude: ^tests/
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: "v1.0.1"
+    rev: "v1.12.1"
     hooks:
       - id: mypy
         exclude: ^(docs/|example-plugin/|tests/fixtures)
@@ -116,7 +116,7 @@ repos:
   #   hooks:
   #       - id: yamlfmt
   - repo: https://github.com/pre-commit/pygrep-hooks
-    rev: "f6fb13e9516d1a9720a30a4049c930235abd642e"
+    rev: "v1.10.0"
     hooks:
       - id: python-check-blanket-noqa
       - id: python-check-blanket-type-ignore
@@ -127,7 +127,7 @@ repos:
       - id: rst-directive-colons
       - id: rst-inline-touching-normal
   - repo: https://github.com/nbQA-dev/nbQA
-    rev: 952c895a21aced4601165c43f77188559a5e825c
+    rev: 1.8.7
     hooks:
       - id: nbqa-black
         additional_dependencies: [jupytext, black] # optional, only if you're using Jupytext
@@ -136,7 +136,7 @@ repos:
       # - id: nbqa-flake8
       # - id: nbqa-isort
       #   args: ["--float-to-top"]
-  - repo: https://github.com/charliermarsh/ruff-pre-commit
-    rev: "v0.0.251"
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: "v0.7.0"
     hooks:
       - id: ruff
