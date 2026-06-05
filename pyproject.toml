@@ -30,7 +30,7 @@ requires-python = ">=3.7"
 tests = ["pytest", "pytest-cov"]
 dev = [
     "autotyping",
-    "black>=21",
+    "black>=25.11.0",
     "doc8",
     "mypy",
     "pre-commit",
