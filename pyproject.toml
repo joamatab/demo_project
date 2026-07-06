@@ -47,7 +47,7 @@ dev = [
     "pyproject-flake8",
     ]
 docs = [
-    "jupyter-book==2.1.5",
+    "jupyter-book==2.1.6",
     "autodoc_pydantic",
     "jupytext",
     ]
